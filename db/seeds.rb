@@ -7,7 +7,10 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 require 'ffaker'
-
+Tenant.destroy_all
+User.destroy_all
+Answer.destroy_all
+Question.destroy_all
 # Tenants
 10.times do
   Tenant.create(name: FFaker::Company.name)
